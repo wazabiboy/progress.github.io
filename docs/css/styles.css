@@ -1,0 +1,110 @@
+
+video {
+  object-fit: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body { 
+  
+  padding: 2%; 
+  font: 18px/1.4 sans-serif;
+  
+ }
+ header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+/*Nav Bar*/
+nav
+{
+    border-radius: 20px;
+    border: solid rgba(99, 97, 97, 0.357) 2px;
+    width: 50%;
+
+}
+  nav a { 
+    color: rgb(255, 255, 255); 
+    display: block; 
+    padding: 0.5em 1em; 
+    text-decoration: none; 
+  }
+  
+  nav > ul { 
+    background: rgba(0, 0, 0, 0.7); 
+    text-align: center; 
+    border-radius: 20px;
+  }
+  nav > ul > li { 
+    display: inline-block;
+  }
+  nav > ul > li:first-child { 
+    border-left: none;
+  }
+  nav ul,
+  nav ul li {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .sub-menu {
+    background: rgb(0, 0, 0);
+  }
+  /*Nav hover*/
+
+  nav a:hover { 
+    color: #F55; 
+  }
+  .menu-parent { 
+    position: relative; 
+  padding: 5px;
+}
+
+.sub-menu { 
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.menu-parent:focus .sub-menu,
+.menu-parent:focus-within .sub-menu,
+.menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu with hover */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+/* presentational */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main img{ 
+  width: 80vh;
+  margin-top: 50px;
+}
+
+/*footer*/
+.copyright {
+  font-size: 10pt;
+  text-align: center;
+  padding-bottom: 10px;
+  color: grey;
+}
