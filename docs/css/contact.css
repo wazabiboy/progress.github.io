@@ -2,22 +2,23 @@ body {
   padding: 2%; 
   font: 18px/1.4 sans-serif;
   background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
  header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
  }
-
-/*Nav Bar*/
-nav
-{
-    border-radius: 20px;
-    border: solid rgba(99, 97, 97, 0.357) 2px;
+ /*Nav Bar*/
+ nav
+ {
+   border-radius: 20px;
+   border: solid rgba(99, 97, 97, 0.357) 2px;
     width: 50%;
-
+    
 }
-  nav a { 
+nav a { 
     color: rgb(255, 255, 255); 
     display: block; 
     padding: 0.5em 1em; 
@@ -78,22 +79,39 @@ nav
 }
 
 /* presentational */
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header img {
+  width: 20vh;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-
-main img{ 
-  width: 80vh;
-  margin-top: 50px;
+  h1 {
+    font-size: 25pt;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    background-color:rgba(238, 238, 238, 0.4);
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
 }
-
-/*footer*/
-.copyright {
-  font-size: 10pt;
-  text-align: center;
-  padding-bottom: 10px;
-  color: grey;
+  form {
+    text-align: center;
+    margin-top: 4em;
+}
+textarea {
+    height: 100px;
+}
+.submit {
+    background-color: grey;
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 3px inset #000 ;
+    background-color: #ada9a9;
+    color: #504e4e;
+    border-radius: 10px;
+    width: 50%;
+    outline: none;
 }
